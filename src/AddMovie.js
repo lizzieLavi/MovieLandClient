@@ -23,7 +23,7 @@ function AddMovie(props) {
   const saveMovie = async() =>
   {  
     var newMovie={Name:Name,Genres:GenresArr,Image:Image,Premiered:Premiered,summary:Summary}
-    var status = await axios.post('https://cinemaws.herokuapp.com/api/movies/',newMovie,config)
+    await axios.post('https://cinemaws.herokuapp.com/api/movies/',newMovie,config)
     props.UpdateCallBack()
   }
   

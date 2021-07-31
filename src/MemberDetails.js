@@ -14,7 +14,7 @@ function MemberDetails(props) {
 
   const DeleteMember= async(id) =>
   {
-    var status = await axios.delete('https://cinemaws.herokuapp.com/api/Members/'+ id,config)
+    await axios.delete('https://cinemaws.herokuapp.com/api/Members/'+ id,config)
     props.UpdateCallBack()
       
   }

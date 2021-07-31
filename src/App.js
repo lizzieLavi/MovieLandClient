@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import './css/App.css';
 import LogIn from './LogIn'
 import AdminMenu from './AdminMenu'

@@ -28,7 +28,7 @@ const LogIn = (props) =>
               
            let UserDetails = await axios.get("https://cinemaws.herokuapp.com/api/users/CurrentUserData/"+ user.data.User._id,{'headers': {'x-access-token': user.data.token}})
            let allData = {UserDetails:UserDetails.data.UserData,UserLogin:user.data.User,UserPermissions:UserDetails.data.UserPermissions }
-           if(user.data.User.UserName == 'ADMIN')
+           if(user.data.User.UserName === 'ADMIN')
              sessionStorage['type'] = 'ADMIN'
            else 
              sessionStorage['type'] = 'REGULAR'
@@ -37,12 +37,12 @@ const LogIn = (props) =>
            props.LogInCallback(allData)
 
 
-           if(sessionStorage["type"]  == 'ADMIN')
+           if(sessionStorage["type"]  === 'ADMIN')
            {
               history.push('/AdminMenu')
            }
 
-           else if(sessionStorage["type"]  == 'REGULAR')
+           else if(sessionStorage["type"]  === 'REGULAR')
            {
               history.push('/Menu')
            }

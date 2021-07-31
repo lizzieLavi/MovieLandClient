@@ -43,7 +43,7 @@ function EditUser(props) {
       {id:3,name:"Delete Subscription"},{id:4,name: "View Movie"} ,
       {id:5 ,name:"Create Movie"},{id:6,name: "Delete Movie"}]
   
-      PermissionsArr.map((per,index)=>
+      PermissionsArr.forEach((per,index)=>
       {
         if((props.user.Permissions.permissions).includes(per.name))
           dispatch({id:per.id})     
@@ -60,7 +60,7 @@ function EditUser(props) {
     var UpdatedUser={id:props.user.user.id,FirstName:FirstName,LastName:LastName,CreatedDate:CreatedDate,SessionTimeOut:SessionTimeOut}
     await axios.put('https://cinemaws.herokuapp.com/api/users/'+props.user.user.id,UpdatedUser,config)
     var permissionsArr =[]
-    checkedPermissions.map((permission,index)=>
+    checkedPermissions.forEach((permission,index)=>
     {
       if(state.checkedIds.length>0)
       {

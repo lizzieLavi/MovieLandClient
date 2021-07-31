@@ -15,7 +15,7 @@ function AddMember(props) {
   const saveMember = async() =>
   {  
     var newMember = {Name:Name,Email:Email,City:City}
-    var status= await axios.post('https://cinemaws.herokuapp.com/api/Members/',newMember,config)
+    await axios.post('https://cinemaws.herokuapp.com/api/Members/',newMember,config)
     props.UpdateCallBack()
   }
   
@@ -26,7 +26,7 @@ function AddMember(props) {
         <h1 className='title'>Add Member:</h1>
         <label className='labels' for="Name">Full Name: </label>
         <input  className='data' id='Name' type="text"  onChange={(e)=> setName(e.target.value)} /><br/>
-        <label  className='data' className='labels' for="Email">Email: </label>
+        <label  className='labels' for="Email">Email: </label>
         <input  className='data' id='Email' type="text"  onChange={(e)=> setEmail(e.target.value)} /><br/>
         <label  className='labels' for="City">City: </label>
         <input  className='data' id='City' type="text"  onChange={(e)=> setCity(e.target.value)} /><br/>

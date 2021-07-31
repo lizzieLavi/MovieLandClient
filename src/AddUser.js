@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {useEffect, useState } from 'react';
+import {useState } from 'react';
 import {Link} from 'react-router-dom'
 import './css/editAndAddUser.css'
 
@@ -23,12 +23,12 @@ function AddUser(props) {
     var newLogin = {username:UserName,password:Password}
     var returnedLoginData= await axios.post('https://cinemaws.herokuapp.com/api/LogIn/',newLogin,config)
     var newUser={id:returnedLoginData.data.userId, FirstName:FirstName,LastName:LastName,CreatedDate:date.toLocaleDateString(),SessionTimeOut:SessionTimeOut}
-    var status = await axios.post('https://cinemaws.herokuapp.com/api/users/',newUser,config)
+    await axios.post('https://cinemaws.herokuapp.com/api/users/',newUser,config)
     var permissionsArr = []
 
     checkedPermissions.map((permission,index)=>
     {
-      if(permission.checked==true)
+      if(permission.checked===true)
         permissionsArr=[...permissionsArr,permission.name] 
              
     })
@@ -44,7 +44,7 @@ function AddUser(props) {
     var PerArr=checkedPermissions
     PerArr.map((permission,index)=>
     {
-      if(permission.name == e.target.value)
+      if(permission.name === e.target.value)
         permission.checked= (!permission.checked)  
     })
 

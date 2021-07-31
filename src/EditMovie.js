@@ -18,29 +18,21 @@ function EditMovie(props) {
     var genersStr=''
     if(props.movie.Genres!=null)
     {
-      props.movie.Genres.forEach( function(genre)
+      props.movie.Genres.map( function(genre)
       {
-        if(genersStr!= '')
-        {
+        if(genersStr !== '')
           genersStr= genersStr + ',' + genre
-        }
 
         else
-        {
           genersStr=genre
-        }
 
-    })
+      })
 
     if(props.movie.Premiered!=null)
-    {
-          setPremiered(props.movie.Premiered.slice(0,10))
-    }
+      setPremiered(props.movie.Premiered.slice(0,10))
 
-    
-
-  
     setGenresStr(genersStr)
+
    }
   
  }, []);
@@ -57,7 +49,7 @@ function EditMovie(props) {
  const saveMovieChange = async() =>
  {  
     var movieUp={Name:Name,Genres:GenresArr,Image:Image,Premiered:Premiered,summary: props.movie.summary}
-    var status = await axios.put('https://cinemaws.herokuapp.com/api/movies/'+ props.movie._id,movieUp,config)
+    await axios.put('https://cinemaws.herokuapp.com/api/movies/'+ props.movie._id,movieUp,config)
     props.UpdateCallBack() 
  }
 
