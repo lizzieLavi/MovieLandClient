@@ -1,0 +1,87 @@
+#user:hover
+{ 
+  box-shadow:  0px 0px 60px -10px   #9ac7fa;
+}
+
+.users_page
+{
+  background: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user_card
+{
+  padding: 1.5rem;
+  margin:2rem;
+  margin-top:4rem;
+  padding-bottom: 1rem;
+  border-radius: 0.3rem;
+  background-color: #EEEBE7;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.user_card:after
+ {
+  content: '';
+  display: block;
+  width: 19rem;
+  height: 30rem;
+  background: #9ac7fa;
+
+  position: absolute;
+  animation: rotatemagic 0.75s cubic-bezier(0.425, 1.040, 0.470, 1.105) 1s both;
+  z-index: 1;
+}
+
+.info_section
+{
+  position:relative;
+  z-index: 2;
+}
+
+
+.user_header
+{
+  text-align: center;
+  color: #8CA0B4;
+  font-size: 1.2rem;
+}
+
+.user_details
+{
+    text-align: center;
+    margin:1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.user_card .editAndDelete
+{
+  padding:0px;
+  margin:0px;
+}
+
+.user_details h3
+{
+  margin-bottom: 0.3rem;
+  font-weight: 350;
+}
+
+
+@keyframes rotatemagic{
+    0%{
+      opacity: 0;
+      transform: rotate(-0deg);
+      top: -2.4rem;
+      left: -25.3rem;
+    }
+    100%{
+      
+      transform: rotate(-30deg);
+      top: -2.4rem;
+      left: -7.8rem;
+    }
+}

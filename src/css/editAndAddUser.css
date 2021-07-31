@@ -1,0 +1,107 @@
+
+  .editUser
+  {
+    color:white;
+    height: 200vh;
+  }
+
+  .editUser .border
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    border: rgb(240, 237, 237) solid 4px ;
+    width: 56rem;
+    height: 62rem;
+    background-color: #607D9D;
+    border-radius: 1rem;
+  }
+
+  .title
+  {
+     margin:2rem;
+     margin-top: 2rem;
+     color: white;
+     text-align: center;
+  }
+
+  .editUser label
+  {
+      padding: 0.2rem;
+      margin: 0.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: white;
+  }
+
+  .userData .data
+  {
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-weight: 500;
+  }
+
+  .editUser button
+  {
+ 
+    background-color:#8CA0B4;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    margin: 0.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+
+  .editUser button:hover
+  {
+    background-color: #7E90A2;
+    color: rgb(233, 230, 230);
+  }
+
+  .permissionsLable
+  {
+      display: flex;
+      align-items: center;
+
+  }
+
+  .PemissionsStyle
+  {
+      list-style: none;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+.checkboxItem
+{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    
+}
+
+.perCheckbox 
+{
+    width: 1.5rem;
+}
+
+@media (min-width:351px) and (max-width:500px) {
+
+  .editUser .border
+  {
+    width: 40rem;
+    height: 68rem;
+  }
+  
+}

@@ -1,0 +1,91 @@
+#member:hover
+{    
+  box-shadow:  0rem 0rem 6rem -1rem   #9ac7fa;
+}
+
+.members_page
+{
+  margin: 0;
+  background: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+}
+
+.member_card
+{
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  margin:2rem;
+  margin-top:4rem;
+  padding-bottom: 1rem;
+  border-radius: 0.3rem;
+  background-color: #1e1f21;
+  border: 0.1rem solid #9ac7fa;
+  display: block;
+  z-index: 0;
+
+}
+
+
+
+.member_header
+{
+  color: #8CA0B4;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.member_details
+{
+    margin:1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    color: #C7C5C2;
+}
+
+.member_details h3
+{
+  margin-bottom: 0.3rem;
+  font-weight: 350;
+}
+
+.member_card .Botns
+{
+  background-color:#8CA0B4;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  margin-bottom: 0.7rem;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.Botns a
+{
+  color:white;
+}
+
+.Botns:hover
+{
+  background-color: #7E90A2;
+  color: rgb(233, 230, 230);
+}
+
+.member_window .flipLink
+{
+  color:#EEEBE7;
+  cursor: pointer;
+  text-decoration: underline #9ac7fa ;
+  font-size: 1.5rem;
+
+}
+
+.member_window .flipLink:hover
+{
+  text-decoration: underline #9ac7fa 0.3rem;
+}
+

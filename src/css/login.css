@@ -1,0 +1,80 @@
+
+.flex-container
+{
+    font-size: 1.4rem;
+    display:flex;
+    background: #333 url('./background2.jpg')
+    no-repeat center center/cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login 
+{      
+    font-weight: 400;
+    border: white solid 4px ;
+    width: 40rem;
+    height: 32rem;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 85%;
+    text-align: center;
+}
+
+.login h1
+{
+   padding: 0.3rem;
+   margin: 0.4rem;
+   margin-bottom: 2rem;
+}
+
+.login h3
+{
+    padding-bottom: 0.5rem;
+}
+
+.userDetails
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.btn
+{
+    background-color: white;
+    color: black;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    margin-bottom: 0.5rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: rgb(233, 230, 230);
+    color: rgb(12, 11, 11);
+}
+
+.flex-container a{
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.login .btns
+{
+    margin-top: 1.5rem;
+}
+
+
+
+
+

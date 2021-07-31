@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+
+#movie
+{
+  box-shadow: 0px 0px 12rem -5.5rem   #9ac7fa;
+}
+
+#movie:hover
+{
+    
+  box-shadow: 0px 0px 15rem -4.5rem   #cee4fd;
+}
+
+.movies_page
+{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.movie_card
+{
+  margin: 10rem 20rem; 
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: all 0.4s;
+  z-index: 0;
+}
+
+.movie_card:hover
+{
+  transform: scale(1.02);
+  transition: all 0.4s;
+}
+
+.movie_header
+{
+  position: relative;
+  padding: 2rem;
+  margin:1.5rem 0.5rem 1rem 1.5rem;
+  height: 40%;
+  width: 65rem;
+}
+
+.movieName
+{
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.datePremiered
+{
+  color: #9ac7fa;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.type
+{
+  display: inline-block;
+  color: #cee4fd;
+  margin-right: 1rem;
+}
+
+.movie_card .IMG
+{
+  float: left;
+  margin-right: 2rem;
+  height: 12rem;
+  margin-left: 0rem;
+}
+
+.description
+{
+  color: #cfd6e1;
+}
+
+.movie_desc
+{
+  padding: 1.5rem;
+  margin:2rem;
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.movie_card .editAndDelete
+{
+  margin-bottom:1rem;
+}
+
+
+
+@media (min-width:351px) and (max-width:500px) {
+
+  .movie_card
+  {
+    width: 40rem;
+  }
+
+    
+}
+
+    

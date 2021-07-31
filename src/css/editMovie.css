@@ -1,0 +1,78 @@
+
+  .editPage
+  {
+    color:white;
+    height: 100vh;
+  }
+
+  .editPage .border
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    border: rgb(240, 237, 237) solid 4px ;
+    width: 53rem;
+    height: 60rem;
+    background-color: #607D9D;
+    border-radius: 1rem;
+  
+
+  }
+
+  .title
+  {
+     margin:2rem;
+     margin-top: 2rem;
+     color: white;
+  }
+
+  .editPage label
+  {
+      padding: 0.2rem;
+      margin: 0.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: white;
+  }
+
+  .editPage input
+  {
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-weight: 500;
+  }
+
+  .editPage button
+  {
+ 
+    background-color:#8CA0B4;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    margin: 0.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+
+  .editPage button:hover
+  {
+    background-color: #7E90A2;
+    color: rgb(233, 230, 230);
+  }
+
+  @media (min-width:351px) and (max-width:500px) {
+
+    .editPage .border
+    {
+      width: 40rem;
+      height: 55rem;
+    }
+    
+  }

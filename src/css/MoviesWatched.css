@@ -1,0 +1,171 @@
+.MoviesSub
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color:#DEDBD8;
+
+}
+
+.movies_watched
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:0.7rem;
+  margin:0.7rem;
+  border: 1rem solid rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.MoviesSub .title
+{
+  color:  #C7C5C2;
+  padding: auto;
+  margin: 0.7rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.MoviesSub ul
+{
+  margin: 1rem;
+}
+
+.MoviesSub .IMG
+{
+  float: left;
+  margin-right: 2rem;
+  height: 5rem;
+  margin-left: 0rem;
+}
+
+.movieDateAndName
+{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+ 
+}
+
+.movieDateAndName .Link:hover
+{
+  text-decoration: underline #9ac7fa 0.3rem;
+  
+}
+
+.movieDateAndName .Link{
+
+  color: #EEEBE7;
+  text-decoration: underline #9ac7fa ;
+
+}
+
+.movieDateAndName .date{
+  margin-left: 2rem;
+}
+
+.SunscribeButton
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  width: 21rem;
+  height: 3rem;
+  background-color:#8CA0B4;
+  color: white;
+}
+
+.SunscribeButton:hover
+{
+  background-color: #7E90A2;
+  color: rgb(233, 230, 230);
+}
+
+
+.addNewSub
+{
+  font-size:1.8rem;
+  font-weight: 300;
+  border:0.1rem solid #7E90A2;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin: 0.7rem;
+
+}
+
+.addSubTitle
+{
+  color:#9ac7fa;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.subDetails
+{
+  margin:0.7rem;
+  margin-bottom: 1.3rem;
+}
+
+.submitBtn
+{
+
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  width: 15rem;
+  height: 3rem;
+  background-color:#8CA0B4;
+  color: white;
+  border-radius: 1.5rem;
+}
+
+.submitBtn:hover
+{
+  background-color: #7E90A2;
+  color: rgb(233, 230, 230);
+
+}
+
+
+.MoviesSub .flipLink
+{
+  color:#EEEBE7;
+  cursor: pointer;
+  text-decoration: underline #9ac7fa ;
+  font-size: 1.5rem;
+}
+
+.MoviesSub .flipLink:hover
+{
+  text-decoration: underline #9ac7fa 0.3rem;
+}
+
+
+.MoviesSub li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0;
+  box-sizing: border-box;
+}
+
+/* Element separation */
+li + li {
+  border-top: 0.1rem solid rgba(255,255,255,0.2);
+}
+
+.inputDesign
+{
+  border-radius: 1.5rem;
+  height: 2.5rem;
+}
