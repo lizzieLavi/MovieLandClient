@@ -1,8 +1,7 @@
 
 .flex-container
 {
-    position:relative;
-    z-index:-1;
+  
     font-size: 1.4rem;
     display:flex;
     background: #333 url('./background2.jpg')
@@ -14,8 +13,7 @@
 
 .login 
 { 
-    position:relative;
-    z-index:1;     
+    
     font-weight: 400;
     border: white solid 4px ;
     width: 40rem;
@@ -25,7 +23,7 @@
     color:white;
     border-radius: 10px;
     background-color: black;
-    opacity: 85%;
+   
     text-align: center;
   
 }
