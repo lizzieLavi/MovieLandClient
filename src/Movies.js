@@ -98,7 +98,8 @@ function Movies(props)
 
         <div className='botnsClass'>
           <button onClick={()=>setUpdateFlag(!UpdateFlag)} className='defaultBotn'><Link className='defaultLink' to={`/Movies/AllMovies`}>All Movies</Link></button>
-          <button className='defaultBotn'><Link className='defaultLink' to={`/Movies/AddMovie`}>Add Movie</Link></button> 
+          <button className='defaultBotn'>
+            {(props.userInfo.UserPermissions).includes("Create Movie") ? <Link className='defaultLink' to={`/Movies/AddMovie`}>Add Movie</Link>: alert("you are not autherized")}</button> 
         </div>
 
         <Switch>
