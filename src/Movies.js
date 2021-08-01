@@ -16,6 +16,7 @@ function Movies(props)
   const [currentMovie,setCurrentMovie] = useState({})
   const [UpdateFlag,setUpdateFlag] =useState(0)
   const config ={'headers': {'x-access-token': sessionStorage["token"] }}
+  const [PermissionFlag,setPermissionFlag] = useState(false)
 
   useEffect(async function fetchData()
   {
@@ -72,6 +73,9 @@ function Movies(props)
   }
 
 
+
+
+
   return (
 
     
@@ -92,14 +96,15 @@ function Movies(props)
       <div className='top_page'>
         <h3 className='head_title'>Movies</h3>
         <div className='SearchClass'>
-          <button className='searchBotn' onClick={loadMoviesFind}><Link  to={`/Movies/searchResult`}><i class="fa fa-search"></i></Link></button>
+          <button className='searchBotn' onClick={() =>loadMoviesFind("Create Movie")}><Link  to={`/Movies/searchResult`}><i class="fa fa-search"></i></Link></button>
+          
           <input className='find' onChange={searchValue} type='textbox' placeholder="Find Movie.." />
         </div>
 
         <div className='botnsClass'>
           <button onClick={()=>setUpdateFlag(!UpdateFlag)} className='defaultBotn'><Link className='defaultLink' to={`/Movies/AllMovies`}>All Movies</Link></button>
-          <button className='defaultBotn'>
-            {(props.userInfo.UserPermissions).includes("Create Movie") ? <Link className='defaultLink' to={`/Movies/AddMovie`}>Add Movie</Link>: alert("you are not autherized")}</button> 
+          <button className='defaultBotn' > <Link className='defaultLink' to={`/Movies/AddMovie`}>Add Movie </Link> </button> 
+            
         </div>
 
         <Switch>
