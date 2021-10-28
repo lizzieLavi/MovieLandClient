@@ -8,6 +8,14 @@
   background: black;
   font-size: 14px;
   font-weight: 400;
+  height:100vh;
+}
+
+.form_buttons
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .user_card

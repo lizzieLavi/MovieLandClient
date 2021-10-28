@@ -13,7 +13,6 @@
     margin-top: 4rem;
     border: rgb(240, 237, 237) solid 4px ;
     width: 56rem;
-    height: 62rem;
     background-color: #607D9D;
     border-radius: 1rem;
   }
@@ -33,6 +32,15 @@
       margin-bottom: 0.5rem;
       font-weight: 500;
       color: white;
+  }
+
+  .userData
+  {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .userData .data
@@ -70,6 +78,7 @@
   {
       display: flex;
       align-items: center;
+      justify-content: center;
 
   }
 
@@ -101,7 +110,7 @@
   .editUser .border
   {
     width: 40rem;
-    height: 68rem;
+  
   }
   
 }
